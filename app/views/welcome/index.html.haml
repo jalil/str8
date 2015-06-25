@@ -1,0 +1,6 @@
+%header
+  -@users.each do |user|
+    = user.name
+    = user.age
+    %h2= image_tag user.image, size: "200"
+    = user.comment
