@@ -1,0 +1,7 @@
+%header
+  -@users.each do |user|
+    = user.name
+    = user.age
+    %h2=link_to (image_tag user.image, size: "200")
+    = user.comment
+    %p

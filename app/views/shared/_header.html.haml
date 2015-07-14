@@ -1,0 +1,25 @@
+%section#top-header.row
+  %h1.span2
+    = link_to "sTR8"
+  - if !current_user
+    %ul
+      %li= link_to "Videos", queue_items_path
+      -#%li= link_to "My Queue", my_queue_path
+      %li= link_to "Favorite", friendships_path
+    -#= form_tag search_videos_path, method: 'post', class: 'span5 for-search' do
+      -#%input.search-query(name="search_term" type="text" placeholder="Search for videos here")
+      -#=button_tag "Search", name: nil, class: 'btn'
+    #user_links.pull-right
+      %ul
+        %li.dropdown
+          %a(href="#" id="dlabel" role="button" data-toggle="dropdown" class="dropdown-toggle" data-target="#")
+            -#Welcome, #{current_user.email}
+            %b.caret
+          %ul.dropdown-menu(role="menu" aria-labelledby="dlabel")
+            %li
+              -if current_user
+                = link_to "Create New Video"
+              = link_to "Account"
+              = link_to "Invite Friends"
+              %a(href="#") Plan and Billing
+              = link_to "Sign Out", logout_path 

@@ -37,8 +37,10 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.0)
+    bcrypt (3.1.10)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (5.0.0)
       columnize (= 0.9.0)
@@ -57,8 +59,7 @@ GEM
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.5.2)
-    factory_girl (4.5.0)
-      activesupport (>= 3.0.0)
+    fabrication (2.13.2)
     faker (1.4.3)
       i18n (~> 0.5)
     ffi (1.9.8)
@@ -78,6 +79,10 @@ GEM
     guard-rails (0.7.1)
       guard (~> 2.11)
       guard-compat (~> 1.0)
+    guard-rspec (4.6.0)
+      guard (~> 2.1)
+      guard-compat (~> 1.1)
+      rspec (>= 2.99.0, < 4.0)
     haml (4.0.6)
       tilt
     haml-rails (0.9.0)
@@ -125,6 +130,8 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-rails (0.3.4)
+      pry (>= 0.9.10)
     rack (1.6.4)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -158,6 +165,10 @@ GEM
       ffi (>= 0.5.0)
     rdoc (4.2.0)
       json (~> 1.4)
+    rspec (3.0.0)
+      rspec-core (~> 3.0.0)
+      rspec-expectations (~> 3.0.0)
+      rspec-mocks (~> 3.0.0)
     rspec-core (3.0.4)
       rspec-support (~> 3.0.0)
     rspec-expectations (3.0.4)
@@ -225,14 +236,18 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (~> 3.1.7)
+  bootstrap_form
   byebug
   coffee-rails (~> 4.1.0)
-  factory_girl (~> 4.0)
+  fabrication
   faker
   guard-rails
+  guard-rspec
   haml-rails (~> 0.9)
   jbuilder (~> 2.0)
   jquery-rails
+  pry-rails
   rails (= 4.2.2)
   rspec-rails (~> 3.0.0)
   sass-rails (~> 5.0)

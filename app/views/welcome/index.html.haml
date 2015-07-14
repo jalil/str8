@@ -1,7 +1,15 @@
 %header
+  %br
+  %br
+  %br
+  %br
+  %br
   -@users.each do |user|
-    = user.name
-    = user.age
-    %h2=link_to image_tag user.image, size: "200"
-    = user.comment
+    .user-profile
+      = user.name
+      = user.age
+    %br
+    =link_to (image_tag user.image, size: "200"),  user
+    .queue 
+      =link_to "Add to Favorite", friendships_path(:friend_id => user), :method => :post
     %p

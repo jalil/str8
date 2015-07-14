@@ -1,3 +1,52 @@
-// Place all the styles related to the welcome controller here.
+// Place all the styles related to the videos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//
+//
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+    font: 100% $font-stack;
+      color: $primary-color;
+    }
+
+ ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+
+ li {
+  display: inline;
+  float: left;
+  padding: 2px;
+  border: 1px solid black;
+  font-size: 11px;
+  text-align: center;
+  margin: 20px;
+  border-bottom: 1px solid red;
+ }
+
+ .user-profile{
+  font-size: 20px;
+  padding: 2px;
+
+ }
+
+ .user-profile ul li {
+   border: 1px solid black;
+ }
+
+ h2 {
+  text-decoration: underline;
+ }
+
+li img {.
+     -webkit-transition: all .2s ease-in-out;
+  }
+
+   li img:hover {.
+   -webkit-transform: scale(1.1);
+    border-radius: 4px;
+ }
