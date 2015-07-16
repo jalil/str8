@@ -1,0 +1,9 @@
+%h1 FAVORITES
+-@friends.each do |f|
+  %br
+  =f.friend.name
+  %br
+  = image_tag  f.friend.image, size: "200"
+  %br
+  =link_to f.friend.name, method:  :delete do
+    Delete      | Send  Message

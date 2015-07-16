@@ -30,6 +30,7 @@ gem 'guard-rspec', require: false
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootstrap_form'
 gem "faker"
+gem "binding_of_caller"
 # Use Unicorn as the app server
 # gem 'unicorn'
 
@@ -43,6 +44,7 @@ group :development, :test do
   gem 'shoulda'
   gem 'rspec-rails', '~> 3.0.0'
   gem 'guard-rails'
+  gem "better_errors"
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
 
